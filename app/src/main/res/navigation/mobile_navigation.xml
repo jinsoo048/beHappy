@@ -7,19 +7,32 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.coupangeats.ui.home.HomeFragment"
+        android:name="com.example.coupangeats.src.main.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.coupangeats.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_search"
+        android:name="com.example.coupangeats.src.main.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.coupangeats.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.coupangeats.src.main.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/navigation_orderdetails"
+        android:name="com.example.coupangeats.src.main.orderdetails.OrderdetailsFragment"
+        android:label="@string/title_orderdetails"
+        tools:layout="@layout/fragment_orderdetails" />
+
+    <fragment
+        android:id="@+id/navigation_myeats"
+        android:name="com.example.coupangeats.src.main.myeats.MyeatsFragment"
+        android:label="@string/title_myeats"
+        tools:layout="@layout/fragment_myeats" />
+
 </navigation>
