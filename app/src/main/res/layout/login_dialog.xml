@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp">
+
+
+    <ImageView
+        android:id="@+id/maintitleIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maintitle_image" />
+
+
+    <Button
+        android:id="@+id/apploginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/applogin_image"
+        android:text="쿠팡 앱으로 로그인" />
+
+    <Button
+        android:id="@+id/idloginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/idlogin_image"
+        android:text="쿠팡 아이디로 로그인" />
+
+
+    <ImageView
+        android:id="@+id/subscriptIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/subscript_image" />
+
+    <ImageView
+        android:id="@+id/lawdescIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lawdesc_image" />
+
+</LinearLayout>

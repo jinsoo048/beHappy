@@ -11,4 +11,18 @@
     <string name="input_search_word">검색어 입력</string>
     <string name="delivery_address">배달지 주소 설정</string>
     <string name="search_word">검색어 입력</string>
+
+
+    //Login Dialog IMSI
+    <string name="update">UPDATE</string>
+    <string name="add">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="username">Username</string>/>
+
+
+    //회원가입
+    <string name="page_title_subs">      회원가입</string>/>
+
 </resources>
