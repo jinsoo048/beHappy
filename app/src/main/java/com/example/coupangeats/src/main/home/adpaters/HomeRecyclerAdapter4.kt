@@ -1,4 +1,4 @@
-package com.example.coupangeats.src.main.home
+package com.example.coupangeats.src.main.home.adpaters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,15 +6,16 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.coupangeats.R
+import com.example.coupangeats.src.main.home.HomeFragment
 import java.util.*
 
-class HomeRecyclerAdapter     // Constructor for initialization
+class HomeRecyclerAdapter4     // Constructor for initialization
     (var context: HomeFragment, var images: ArrayList<*>) :
-    RecyclerView.Adapter<HomeRecyclerAdapter.ViewHolder>() {
+    RecyclerView.Adapter<HomeRecyclerAdapter4.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // Inflating the Layout(Instantiates list_item.xml layout file into View object)
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.main_viewpageitem, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.main_recycleritem4, parent, false)
         return ViewHolder(view)
     }
 
@@ -34,7 +35,7 @@ class HomeRecyclerAdapter     // Constructor for initialization
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var images: ImageView
         init {
-            images = view.findViewById<View>(R.id.mainVpItem) as ImageView
+            images = view.findViewById<View>(R.id.mainVpItem4) as ImageView
         }
     }
 }

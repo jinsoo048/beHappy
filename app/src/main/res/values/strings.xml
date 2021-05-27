@@ -23,6 +23,12 @@
 
 
     //회원가입
-    <string name="page_title_subs">      회원가입</string>/>
+    <string name="page_title_subs">      회원가입</string>
+    <string name="label_1">all_agree</string>
+    <string name="label_2">14age</string>
+    <string name="label_3">use_agree</string>
+    <string name="label_4">finance_agree</string>
+    <string name="label_5">info_agree</string>
+    <string name="label_6">give_agree</string>/>
 
 </resources>

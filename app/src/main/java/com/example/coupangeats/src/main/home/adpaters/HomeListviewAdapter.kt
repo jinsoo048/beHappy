@@ -33,7 +33,7 @@ public class HomeListviewAdapter(private val context: Context, private val image
             holder = ViewHolder()
             val inflater: LayoutInflater =
                 context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            view = inflater.inflate(R.layout.main_viewpageitem, null, false)
+            view = inflater.inflate(R.layout.main_recycleritem4, null, false)
             holder.iv = view.findViewById<View>(R.id.mainVpItem) as ImageView
             view.tag = holder
 

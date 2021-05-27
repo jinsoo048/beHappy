@@ -33,6 +33,6 @@
         android:id="@+id/navigation_myeats"
         android:name="com.example.coupangeats.src.main.myeats.MyeatsFragment"
         android:label="@string/title_myeats"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_myeats" />
 
 </navigation>

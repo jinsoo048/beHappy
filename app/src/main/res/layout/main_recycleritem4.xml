@@ -4,9 +4,9 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/mainVpItem"
+        android:id="@+id/mainVpItem4"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="250dp"
         android:paddingRight="3dp"
         android:background="@color/rgba"/>
 

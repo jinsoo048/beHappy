@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.coupangeats.R
 import com.example.coupangeats.config.BaseFragment
 import com.example.coupangeats.databinding.FragmentHomeBinding
+import com.example.coupangeats.src.main.home.adpaters.HomeRecyclerAdapter
+import com.example.coupangeats.src.main.home.adpaters.HomeRecyclerAdapter2
+import com.example.coupangeats.src.main.home.adpaters.HomeRecyclerAdapter3
+import com.example.coupangeats.src.main.home.adpaters.HomeRecyclerAdapter4
 import com.example.coupangeats.src.main.home.models.SignUpResponse
 import com.example.coupangeats.src.main.home.models.UserResponse
 import com.example.coupangeats.src.main.search.SearchinputActivity
@@ -74,6 +78,23 @@ class HomeFragment :
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /*
+        binding.homeButtonTryGetJwt.setOnClickListener {
+            showLoadingDialog(context!!)
+            HomeService(this).tryGetUsers()
+        }
+
+        binding.homeBtnTryPostHttpMethod.setOnClickListener {
+            val email = binding.homeEtId.text.toString()
+            val password = binding.homeEtPw.text.toString()
+            val postRequest = PostSignUpRequest(email = email, password = password,
+                confirmPassword = password, nickname = "test", phoneNumber = "010-0000-0000")
+            showLoadingDialog(context!!)
+            HomeService(this).tryPostSignUp(postRequest)
+        }
+        */
+
+
         //recycler1
         MyrecyclerView = view.findViewById(R.id.mainRecyclerView) as RecyclerView ?
         val mylayoutManager: LinearLayoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
@@ -86,14 +107,14 @@ class HomeFragment :
         MyrecyclerView2 = view.findViewById(R.id.mainRecyclerView2) as RecyclerView ?
         val mylayoutManager2: LinearLayoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         MyrecyclerView2!!.layoutManager = mylayoutManager2
-        val adapter2 = HomeRecyclerAdapter(context = HomeFragment(),images2)
+        val adapter2 = HomeRecyclerAdapter2(context = HomeFragment(),images2)
         MyrecyclerView2!!.adapter = adapter2
 
         //recycler3
         MyrecyclerView3 = view.findViewById(R.id.mainRecyclerView3) as RecyclerView ?
         val mylayoutManager3: LinearLayoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         MyrecyclerView3!!.layoutManager = mylayoutManager3
-        val adapter3 = HomeRecyclerAdapter(context = HomeFragment(),images3)
+        val adapter3 = HomeRecyclerAdapter3(context = HomeFragment(),images3)
         MyrecyclerView3!!.adapter = adapter3      
         
         
@@ -101,7 +122,7 @@ class HomeFragment :
         MyrecyclerView4 = view.findViewById(R.id.mainRecyclerView4) as RecyclerView ?
         val mylayoutManager4: LinearLayoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         MyrecyclerView4!!.layoutManager = mylayoutManager4
-        val adapter4 = HomeRecyclerAdapter(context = HomeFragment(),images4)
+        val adapter4 = HomeRecyclerAdapter4(context = HomeFragment(),images4)
         MyrecyclerView4!!.adapter = adapter4
 
 

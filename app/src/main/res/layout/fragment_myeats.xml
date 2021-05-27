@@ -7,7 +7,7 @@
     tools:context=".src.main.myeats.MyeatsFragment">
 
     <TextView
-        android:id="@+id/text_myeats"
+        android:id="@+id/myeatsTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
